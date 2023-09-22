@@ -17,24 +17,52 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 p-4">
             <!--me-auto(à gauche), ms-auto(à droite)-->
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-light mx-4" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Événements</a>
+              <a class="nav-link text-light mx-4" href="evenements.html">Événements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact</a>
+              <a class="nav-link text-light mx-4" href="contact.html">Contact</a>
             </li>
 
           </ul>
         </div>
       </div>
     </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="photos/slider-1.jpg" class="d-block w-100" alt="slider-1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="photos/slider-2.jpg" class="d-block w-100" alt="slider-2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="photos/slider-3.jpg" class="d-block w-100" alt="slider-3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section>
 
+    </section>
 
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container d-flex justify-content-center fs-5">
+        <span class="text-muted">My Project © <script>document.write(new Date().getFullYear())</script> </span>
+      </div>
+    </footer>
 
 
     <script src="./bootstrap/js/bootstrap.min.js"></script>
