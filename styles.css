@@ -9,4 +9,18 @@ body {
   max-height: 25rem;
 }
 
+@media (max-width:768px) {
+  #intro {
+    width: 90% !important;
+  }
+  #intro > p {
+    text-align: center;
 
+  }
+   #VZ{
+    margin-top: 50px !important;
+  }
+  #GR{
+    margin-top: 50px !important;
+  }
+}
