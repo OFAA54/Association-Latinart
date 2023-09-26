@@ -1,13 +1,45 @@
 body {
   font-family:'Courier New', Courier, monospace;
 }
-
+.navbar {
+  background: #000000 !important;
+}
 .nav-item .nav-link:hover {
   color: blueviolet !important;
 }
 .carousel-inner {
   max-height: 25rem;
 }
+
+#container-formulaire {
+  position:relative;
+  background: #fbfafa;
+  border-radius: 5px;
+  max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#titre-formulaire {
+  color: #3f3f3f;
+}
+
+footer {
+  background: #000000;
+  min-height: 150px;
+}
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#icons i {
+  font-size: 26px;
+  padding: 0 10px;
+  color: #f3f3f3;
+
+}
+
+
 
 @media (max-width:768px) {
   #intro {
