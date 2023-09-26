@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
-<body>
-  <div class="container" id="container-formulaire">
-    <div id="titre-formulaire" class="text-center mb-4">
-      <div>
-        <img src="photos/support.jpg" alt="contact" class="img-fluid" width="300px" height="150px">
-      </div>
-      <h2>Contact</h2>
-      <p class="fs-5">Nous sommes là pour vous aider à réaliser vos soirées d'animations-spectacles</p>
-      <form action="">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="rounded-circle" src="photos/logo-latinart.jpg" alt="photos" width="100" height="100">
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 p-4">
+            <!--me-auto(à gauche), ms-auto(à droite)-->
+            <li class="nav-item">
+              <a class="nav-link active text-light mx-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4" href="evenements.html">Événements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4" href="contact.html">Contact</a>
+            </li>
 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="photos/slider-1.jpg" class="d-block w-100" alt="slider-1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="photos/slider-2.jpg" class="d-block w-100" alt="slider-2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="photos/slider-3.jpg" class="d-block w-100" alt="slider-3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container" id="container-formulaire">
+      <div id="titre-formulaire" class="text-center mb-4">
+        <div>
+          <img src="photos/support.jpg" alt="contact" class="img-fluid" width="300px" height="150px">
+        </div>
+        <h2>Contact</h2>
+        <p class="fs-5">Nous sommes là pour vous aider à réaliser vos soirées d'animations-spectacles</p>
+
+        <form action="">
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Adresse email" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="text" class="form-control" id="nom" placeholder="Nom et prénom" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tél" class="form-control" id="tél" placeholder="Télephone" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Ecrivez votre message"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary w-100 fs-5">Envoyer</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-  </div>
-</body>
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+      <p class="fs-5 px-3 pt-3">ExpertD. &copy; Tous droits réservés 2023</p>
+      <div id="icons">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+      </div>
+    </footer>
+      <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
